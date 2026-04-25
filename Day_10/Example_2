@@ -5,7 +5,7 @@ public class Main {
         HashMap<Integer, String> student = new HashMap<>();
 
         student.put(101, "Shawon");
-        student.put(102, "Tonni");
+        student.put(102, "Roni");
         student.put(103, "Rahim");
 
         System.out.println(student.get(101));
