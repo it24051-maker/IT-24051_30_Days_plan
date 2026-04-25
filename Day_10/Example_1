@@ -1,1 +1,15 @@
+import java.util.ArrayList;
 
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> names = new ArrayList<>();
+
+        names.add("Shawon");
+        names.add("Tonni");
+        names.add("Rahim");
+
+        for (String n : names) {
+            System.out.println(n);
+        }
+    }
+}
