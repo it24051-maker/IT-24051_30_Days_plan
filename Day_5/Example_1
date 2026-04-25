@@ -1,1 +1,21 @@
+class Building {
+    String name;
+    int floors;
 
+    Building(String n, int f) {
+        name = n;
+        floors = f;
+    }
+
+    void show() {
+        System.out.println("Building: " + name);
+        System.out.println("Floors: " + floors);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Building b1 = new Building("Tower A", 10);
+        b1.show();
+    }
+}
