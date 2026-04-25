@@ -1,1 +1,21 @@
+class Addition {
+    int a, b;
 
+    void setValues(int x, int y) {
+        a = x;
+        b = y;
+    }
+
+    void calculateSum() {
+        int sum = a + b;
+        System.out.println("Sum = " + sum);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Addition obj = new Addition();
+        obj.setValues(10, 5);
+        obj.calculateSum();
+    }
+}
