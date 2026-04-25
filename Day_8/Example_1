@@ -1,1 +1,21 @@
+abstract class Car {
+    abstract void start();
 
+    void stop() {
+        System.out.println("Car is stopping");
+    }
+}
+
+class Tesla extends Car {
+    void start() {
+        System.out.println("Tesla starts with button");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Tesla t1 = new Tesla();
+        t1.start();
+        t1.stop();
+    }
+}
