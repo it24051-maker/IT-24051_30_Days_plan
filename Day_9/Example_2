@@ -1,1 +1,17 @@
+class Bank {
+    String bankName = "City Bank";
 
+    class Account {
+        void display() {
+            System.out.println("Bank Name: " + bankName);
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Bank b = new Bank();
+        Bank.Account acc = b.new Account();
+        acc.display();
+    }
+}
