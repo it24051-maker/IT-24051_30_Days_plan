@@ -1,1 +1,28 @@
+class Car {
+    String color;
+    int speed;
 
+    void setValues(String c, int s) {
+        color = c;
+        speed = s;
+    }
+
+    void drive() {
+        System.out.println("Car color: " + color);
+        System.out.println("Car speed: " + speed + " km/h");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Car car1 = new Car();
+        car1.setValues("Red", 120);
+        car1.drive();
+
+        System.out.println();
+
+        Car car2 = new Car();
+        car2.setValues("Blue", 150);
+        car2.drive();
+    }
+}
