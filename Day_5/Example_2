@@ -1,1 +1,21 @@
+class House {
+    String color;
+    int rooms;
 
+    House(String c, int r) {
+        color = c;
+        rooms = r;
+    }
+
+    void display() {
+        System.out.println("House color: " + color);
+        System.out.println("Rooms: " + rooms);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        House h1 = new House("White", 4);
+        h1.display();
+    }
+}
