@@ -1,0 +1,22 @@
+class Vehicle {                     //class name veicle
+    private String brand;           //Two variable_1(private)
+    private String color;           //Two variable_2(private)
+
+    public Vehicle(String brand, String color) { //Public constructor
+        this.brand = brand;
+        this.color = color;
+    }
+
+    public void start() {           //Public method start()
+        System.out.println("Vehicle Brand: " + this.brand);
+        System.out.println("Vehicle Color: " + this.color);
+        System.out.println("Vehicle is starting...\n");
+    }
+}
+
+public class IT24051 {             //Main class (IT24051)
+    public static void main(String[] args) {
+            Vehicle v = new Vehicle(args[0], args[1]); // command line argue which take brand and color
+            v.start();
+    }
+}
