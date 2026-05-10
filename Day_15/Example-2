@@ -1,0 +1,21 @@
+// Collection Example using LinkedList
+
+import java.util.LinkedList;
+import java.util.Collections;
+
+public class CollectionExample2 {
+    public static void main(String[] args) {
+
+        LinkedList<String> names = new LinkedList<>();
+
+        names.add("Karim");
+        names.add("Rahim");
+        names.add("Shawon");
+
+        System.out.println("Before Reverse: " + names);
+
+        Collections.reverse(names);
+
+        System.out.println("After Reverse: " + names);
+    }
+}
