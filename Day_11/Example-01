@@ -1,1 +1,23 @@
 
+// ArrayList Example
+
+import java.util.ArrayList;
+
+public class ListExample {
+    public static void main(String[] args) {
+
+        ArrayList<String> names = new ArrayList<>();
+
+        names.add("Shawon");
+        names.add("Rahim");
+        names.add("Karim");
+
+        System.out.println("All Names: " + names);
+
+        System.out.println("First Name: " + names.get(0));
+
+        names.remove("Rahim");
+
+        System.out.println("After Remove: " + names);
+    }
+}
