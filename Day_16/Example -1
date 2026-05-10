@@ -1,0 +1,21 @@
+// Write to File Example 1
+
+import java.io.FileWriter;
+
+public class WriteFile1 {
+    public static void main(String[] args) {
+
+        try {
+            FileWriter file = new FileWriter("test.txt");
+
+            file.write("Hello Java File");
+
+            file.close();
+
+            System.out.println("File written successfully");
+        }
+        catch (Exception e) {
+            System.out.println(e);
+        }
+    }
+}
