@@ -1,0 +1,24 @@
+// Write to File Example 2
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+
+public class WriteFile2 {
+    public static void main(String[] args) {
+
+        try {
+            BufferedWriter bw = new BufferedWriter(new FileWriter("data.txt"));
+
+            bw.write("Java Programming");
+            bw.newLine();
+            bw.write("File Handling Example");
+
+            bw.close();
+
+            System.out.println("Data saved");
+        }
+        catch (Exception e) {
+            System.out.println(e);
+        }
+    }
+}
