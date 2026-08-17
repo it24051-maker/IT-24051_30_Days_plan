@@ -1,1 +1,20 @@
+#Association
 
+class Teacher {
+    String name = "Mr. Rahman";
+}
+
+class Student {
+    void learn(Teacher teacher) {
+        System.out.println("Student learns from " + teacher.name);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Teacher t = new Teacher();
+        Student s = new Student();
+
+        s.learn(t);
+    }
+}
