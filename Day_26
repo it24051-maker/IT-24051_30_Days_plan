@@ -1,1 +1,25 @@
 
+#Static Keyword
+class Student {
+    static String university = "MBSTU";
+
+    String name;
+
+    Student(String name) {
+        this.name = name;
+    }
+
+    void show() {
+        System.out.println(name + " - " + university);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Student s1 = new Student("Shawon");
+        Student s2 = new Student("Rahim");
+
+        s1.show();
+        s2.show();
+    }
+}
