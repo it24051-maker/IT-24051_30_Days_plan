@@ -1,1 +1,21 @@
 
+#Super Keyword
+class Parent {
+    String name = "Father";
+}
+
+class Child extends Parent {
+    String name = "Son";
+
+    void show() {
+        System.out.println("Child: " + name);
+        System.out.println("Parent: " + super.name);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Child c = new Child();
+        c.show();
+    }
+}
